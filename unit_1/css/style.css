@@ -145,8 +145,8 @@ li:hover > .tab{
   display:block;
   margin-top:0;
 }
-h1, p {color: #333333; font-family: ".tk-acta-display",helvetica,verdana,ariel,sans-serif;}
-h2, p {color: #333333; font-family: ".tk-acta-display",helvetica,verdana,ariel,sans-serif;}
+h1 {font-family: "acta-display",helvetica,verdana,ariel,sans-serif; }
+
 a:link {color: #0066cc}
 
 

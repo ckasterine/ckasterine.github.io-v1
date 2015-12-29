@@ -1,0 +1,131 @@
+.body{
+  background-color:#ffffff; font-family: "Helvetica", "Arial",sans-serif;
+}
+.tk-logo {
+	font-family: "acta-display-n3", "acta-display", serif; 
+	font-style: normal; 
+	font-weight: 300; 
+	font-size: 40px; 
+	color: #999999;  
+	margin-left: 120px;
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	color: #333333;
+}
+.div {
+    width: 1200px;
+    height: 30;
+    border: 4px solid #000000;
+}
+.navigation {
+  font-size: 14px;
+  font-family: "Helvetica Neue";
+  color: #333333;
+  font-weight: bold;
+  line-height: 3;
+  position: absolute;
+  left: 430px;
+  top: 0px;
+  z-index: 75;
+}
+.center {
+    margin-left: 120px;
+    margin-top: 14px;
+    position: fixed;
+}
+.contact {
+	font-size: 14px;
+	font-family: "Helvetica Neue", serif;
+	line-height: 3;
+	position: absolute;
+	margin-left: 120px;
+	top: 620px;
+	z-index: 62;
+}
+a {
+    color: #999999;
+}
+a:hover {
+color: #333333;
+}
+.image_title {
+  font-size: 14px;
+  font-family: "Helvetica Neue";
+  color: #999999;
+  font-style: italic;
+  line-height: 3;
+  position: absolute;
+  margin-left: 680px;
+  top: 610px;
+  z-index: 24;
+}
+nav ul {
+	margin: 0px;
+	float: right;
+	position: relative;
+	list-style: none;
+	display: inline-table;
+}
+nav ul:after {
+	content: "";
+  clear: both;
+  display: block;
+	}
+nav ul li {
+	float: left;
+	/*position: relative;*/
+	margin: 1em .5em;
+}
+nav ul li:last-child {
+  margin-right: 0;
+  font-family: "Helvetica", "Arial",sans-serif;
+}
+nav ul li:hover {
+	background: #ffffff;
+}
+nav ul li:hover a {
+	color: #333333/*999999*/;
+}
+nav ul li a {
+	display: block;
+	color: #999999;
+  	text-decoration: none;
+  	font-family: "Helvetica", "Arial",sans-serif;
+}		
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul li a {
+  display: block;
+  padding: .5em 1em;
+}
+nav ul ul {
+  display: none;
+	background: #ffffff/*4b545f*/;
+  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+	position: absolute;
+  top: 77%;
+  font-family: "Helvetica", "Arial",sans-serif;
+}
+nav ul ul li {
+	float: none; 
+	border-bottom: 1px solid #575f6a;
+  	margin: .5em;
+  	padding: 0 0 .5em 0;
+  	position: relative;
+}
+nav ul ul li:last-child {
+  	border-bottom: 0;
+  	padding: 0; 
+  	font-family: "Helvetica", "Arial",sans-serif;
+}
+nav ul ul li a {
+	padding: 0 .5em;
+  	color: #ffffff;
+}
+nav ul ul li a:hover {
+	color: #333333;
+}
+
