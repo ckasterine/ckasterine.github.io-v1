@@ -13,7 +13,12 @@
 <div class="header-area" id="tk-logo">Dmitri Kasterine</div>
 <div>
 <ul class="leftNav" id="navigation-nb">
-             <li// direct event
+             
+
+
+<li>Newburgh Documentary <i class="fa fa-caret-down" style="font-size:18px"></i>
+<script type="text/javascript">           
+// direct event
 $('.touch').on('tap', function(e) {
     console.log(this, e);
 });
@@ -21,7 +26,8 @@ $('.touch').on('tap', function(e) {
 // delegated event
 $('.parent').on('tap', '.touch', function(e) {
     console.log(this, e);
-});>Newburgh Documentary <i class="fa fa-caret-down" style="font-size:18px"></i>
+});
+</script>
                     <ul class="leftSubNav" id="navigation-nb">
                         <li><a href="#">Preview</a></li>
                         <li><a href="#">Photos</a></li>
