@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kasterine.com: Unit 4</title>
+    <script src="//rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
+    <script src="https://use.typekit.net/cja8inl.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper">
+<div class="header-area" id="tk-logo">Dmitri Kasterine</div>
+<div>
+<ul class="leftNav" id="navigation-nb">
+             <li// direct event
+$('.touch').on('tap', function(e) {
+    console.log(this, e);
+});
+
+// delegated event
+$('.parent').on('tap', '.touch', function(e) {
+    console.log(this, e);
+});>Newburgh Documentary <i class="fa fa-caret-down" style="font-size:18px"></i>
+                    <ul class="leftSubNav" id="navigation-nb">
+                        <li><a href="#">Preview</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Stills</a></li>
+                        <li><a href="#">Overview</a></li>
+                    </ul>
+            </li>
+            <li>Photography <i class="fa fa-caret-down" style="font-size:18px"></i>
+                    <ul class="leftSubNav">
+                        <li>Galleries</li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                    </ul>
+            </li>
+            <!-- li><a href="#" class="class2">Subjects</a></li> -->
+            <li><a href="#" class="class2">Biography</a></li>
+            <li><a href="#" class="class2">Blog</a></li>
+       <!--  </ul> -->
+       </div>
+<img class="imageposition" id="u97_img" src="images/01_kasterine_home.jpg" alt="" width="976" height="541"/>
+<div class="contactstyle">
+<a href="mailto:dmitri@kasterine.com" <!-- class="contactstyle" -->dmitri@kasterine.com</a>
+</div>
+<div class="imagetitle">
+<p>Film still from the documentary Newburgh NY: Beauty and Tragedy</p>
+</div>     
+</div>
+</body>
+</html>
