@@ -88,6 +88,7 @@ a.contactstyle {
   font-family: Helvetica,sans-serif;
   color: #999999;
   line-height: 3;
+  display: inline-table;
   /*position: absolute;
   margin-left: 40px;
   top: 620px;*/
@@ -100,6 +101,7 @@ a.contactstyle:hover {
   font-family: Helvetica,sans-serif;
   color: #000;
   line-height: 3;
+  display: inline-table;
   /*position: absolute;
   margin-left: 40px;
   top: 620px;*/
@@ -118,6 +120,7 @@ a.contactstyle:hover {
 
 /*start-nb photo column*/
 .nb-photogrid {
+  vertical-align: top;
   -webkit-columns: 4 211px;
   -moz-columns: 4 211px;
   columns: 4 211px;
@@ -126,9 +129,8 @@ a.contactstyle:hover {
   column-gap: 2em;
 }
 
-p {
-  margin-bottom: 1.3em;
-  text-align: justify;
+p.class4 {
+ vertical-align: top;
 }
 /*end-nb photo column*/
 
