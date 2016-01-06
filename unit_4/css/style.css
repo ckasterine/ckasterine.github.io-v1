@@ -29,7 +29,7 @@ display: inline-table;
   position: absolute;
   font-weight: 300; 
   font-size: 40px; 
-  color: #9966ff/*000*/;  
+  color: #666666;  
   margin-left: 40px;
   margin-top: 10px; 
   margin-bottom: 10px;
@@ -117,7 +117,6 @@ p {
   margin-bottom: 1.3em;
   text-align: justify;
 }
-
 /*end-nb photo column*/
 
 
@@ -134,8 +133,8 @@ ul.leftNav {
     }
 
     .leftNav li:hover {
-        background-color: transparent;/*black*/;
-        color: black/*white*/;
+        background-color: transparent;
+        color: black;
     }
 
     ul.leftNav  li{
@@ -171,7 +170,7 @@ ul.leftNav {
 
     .leftNav li:hover ul.leftSubNav {
         display: inline-block;
-        background-color: transparent; /*grey;*/
+        background-color: transparent;
         padding: 2px 8px;
     }
 
