@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kasterine.com: Unit 4 Newburgh Photos</title>
+	<title>Kasterine.com: Unit 4</title>
 <!-- 010516- start jquery  not working -->
     <script src="https://rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
 <!-- 010516- end jquery  not working -->
@@ -11,14 +11,39 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-
 <body>
 <div id="wrapper">
-	<div class="header-area" id="tk-logo"><a href="index.html" class="class3">Dmitri Kasterine</a></div>
-	<nav>
+	<div class="header-area" id="tk-logo">Dmitri Kasterine</div>
+	<div>
 	<ul class="leftNav" id="navigation-nb">            
-	<li>
+	<li><script type="text/javascript">           
+	// direct event
+	$('.touch').on('tap', function(e) {
+	    console.log(this, e);
+	});
+
+	// delegated event
+	$('.parent').on('tap', '.touch', function(e) {
+	    console.log(this, e);
+	});
+	</script>
 	Newburgh Documentary <i class="fa fa-caret-down" style="font-size:18px"></i>
+
+<!-- 010516-start jquery not working -->
+	<script type="text/javascript">           
+	// direct event
+	$('.touch').on('tap', function(e) {
+	    console.log(this, e);
+	});
+
+	// delegated event
+	$('.parent').on('tap', '.touch', function(e) {
+	    console.log(this, e);
+	});
+	</script>
+
+<!-- 010516-end jquery not working -->
+
 	                    <ul class="leftSubNav" id="navigation-nb">
 	                        <li><a href="#">Preview</a></li>
 	                        <li><a href="03_nb_photos.html">Photos</a></li>
@@ -40,37 +65,28 @@
 	                        <li><a href="#">8</a></li>
 	                    </ul>
 	            </li>
-
+<!-- 010516-Subjexts section removed. Add link to Bio page. li><a href="#" class="class2">Subjects</a></li> -->
+	            
 	            <li><a href="#" class="class2">Biography</a></li>
 	            
 	            <li><a href="#" class="class2">Blog</a></li>
-	       	</nav>
+	       </div>
 
-<div class="pagecontainer">
-	<div class="nb-photogrid">
-	<p class="class4"><img src="images/03_kasterine_nb_fig01.jpg" alt="House with eyes" width="211" height="252"></p>
-
-	<p class="class4"><img src="images/03_kasterine_nb_fig02.jpg" alt="House with eyes" width="211" height="252"></p>
-
-	<p class="class4"><img src="images/03_kasterine_nb_fig03.jpg" alt="House with eyes" width="211" height="252"></p>
-
-	<p class="class4"><img src="images/03_kasterine_nb_fig04.jpg" alt="House with eyes" width="211" height="252"></p>
-
+	<div class="pagecontainer">
+	<figure>
+	<img src="images/01_kasterine_home.jpg" alt="Newburgh: Beauty and Tragedy film still" width="976" height="541">
+	</figure>
 	</div>
-	<div class="nb-photogrid">
-	<p><img src="images/03_kasterine_nb_fig05.jpg" alt="House with eyes" width="211" height="252"></p>
 
-	<p><img src="images/03_kasterine_nb_fig06.jpg" alt="House with eyes" width="211" height="252"></p>
-
-	<p><img src="images/03_kasterine_nb_fig07.jpg" alt="House with eyes" width="211" height="252"></p>
-
-	<p><img src="images/03_kasterine_nb_fig08.jpg" alt="House with eyes" width="211" height="252"></p>
+<!-- 010516 start footer -->
+<div class="pagecontainer2">
+	<div class="contactstyle">
+	<a href="mailto:dmitri@kasterine.com" <!-- class="contactstyle" -->dmitri@kasterine.com</a>
 	</div>
+
+	<div class="imagetitle">Newburgh NY: Beauty and Tragedy, film still</div>   
 </div>
-
-	<!-- 010516 start footer -->
 	<!-- 010516 end footer -->
-
 </div>
 </body>
 </html>
