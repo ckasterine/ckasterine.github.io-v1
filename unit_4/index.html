@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>Kasterine.com: Unit 4</title>
-<!-- 010516- start jquery  not working -->
+
+<!-- ISSUE 010516 - start jquery  not working -->
     <script src="https://rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
-<!-- 010516- end jquery  not working -->
+<!-- 010516 - end jquery  not working -->
 
     <script src="https://use.typekit.net/cja8inl.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -15,8 +16,22 @@
 <div id="wrapper">
 	<div class="header-area" id="tk-logo">Dmitri Kasterine</div>
 	<div>
-	<ul class="leftNav" id="navigation-nb">            
-	<li>Newburgh Documentary <i class="fa fa-caret-down" style="font-size:18px"></i>
+	<ul class="leftNav" id="navigation-nb">
+
+<!-- ISSUE 010516 - start jquery  not working -->            
+	<li // direct event
+$('.touch').on('tap', function(e) {
+    console.log(this, e);
+});
+
+// delegated event
+$('.parent').on('tap', '.touch', function(e) {
+    console.log(this, e);
+});>
+<!-- 010516 - end jquery  not working -->
+Newburgh Documentary <i class="fa fa-caret-down" style="font-size:18px"></i>
+
+<!-- ISSUE 010616 - submenu displaying improperly on Safari see Kasterine.com_Safari_submenu and Kasterine.com_Chrome_submenu -->
 	                    <ul class="leftSubNav" id="navigation-nb">
 	                       <a href="#" class="class4">Preview</a>
 	                       <a href="03_nb_photos.html" class="class4">Photos</a>
@@ -38,8 +53,7 @@
 	                        <a href="#" class="class4">8</a>
 	                    </ul>
 	            </li>
-<!-- 010516-Subjexts section removed. Add link to Bio page. li><a href="#" class="class2">Subjects</a></li> -->
-	            
+<!-- ISSUE 010616 - end submenu problem  -->
 	            <li><a href="#" class="class2">Biography</a></li>
 	            
 	            <li><a href="#" class="class2">Blog</a></li>
@@ -51,15 +65,13 @@
 	</figure>
 	</div>
 
-<!-- 010516 start footer -->
-<div class="pagecontainer2">
+<footer>
 	<div class="contactstyle">
-	<a href="mailto:dmitri@kasterine.com" <!-- class="contactstyle" -->dmitri@kasterine.com</a>
+	<a href="mailto:dmitri@kasterine.com" class="class2">dmitri@kasterine.com</a>
 	</div>
-
-	<div class="imagetitle">Newburgh NY: Beauty and Tragedy, film still</div>   
-</div>
-	<!-- 010516 end footer -->
+<!-- ISSUE 010616 The imagetitle is independent from the footer section. It's postiion is determined by the margin, while the contact info is contaied in the footer. -->
+	<div class="imagetitle">Newburgh NY: Beauty and Tragedy, film still</div>
+</footer> 
 </div>
 </body>
 </html>
