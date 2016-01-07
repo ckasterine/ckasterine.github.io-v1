@@ -9,7 +9,7 @@ border: 1px dotted black;
 float: left;
 width: 100%;
 vertical-align: top;
-margin-left: 40px;
+margin-left: 20px;
 margin-top: 80px;
 }
 
@@ -19,7 +19,7 @@ border: 1px dotted black;
 float: left;
 width: 100%;
 vertical-align: top;
-margin-left: 40px;
+margin-left: 20px;
 margin-top: 10px;
 display: inline-table;
 }
@@ -30,7 +30,7 @@ display: inline-table;
   font-weight: 300; 
   font-size: 40px; 
   color: #999999;  
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 10px; 
   margin-bottom: 10px;
   display: inline-table;
@@ -89,6 +89,15 @@ a.class4:hover {
 	text-decoration: underline;
 	}
 
+figure.class1 {
+	display: inline-block;
+    margin: 1em;
+    margin-left: 0;
+    margin-top: 0;
+    /*margin-end: 0px;*/
+
+}
+
 .header-area {
 	position: relative;
 	margin-left: 20px;
@@ -128,10 +137,10 @@ a.contactstyle:hover {
   font-family: Helvetica,sans-serif;
   font-style: italic;
   color: #000;
-  line-height: 3;/*
-  margin*/-left: 600px;
-  /*position: absolute;
-  top: 610px;*/
+  line-height: 3;
+  margin-left: 600px;
+  position: absolute;
+  top: 610px;
 }
 
 /*start-nb photo column*/
