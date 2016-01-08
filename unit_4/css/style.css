@@ -219,8 +219,64 @@ ul.leftNav {
 
     /*end-from stackoverflow CK left*/
 
+   /* @import "compass/css3"; -- not sure where this comes from*/
 
-    @import "compass/css3";
+/*start-from HTML and CSS CH 15 website example*/
+
+.nb-photos {
+    /*border-top*/ border: 1px solid #F44336;
+    padding: 10px;
+    }
+
+.container_8 .grid_8 {
+    display: block; /* ISSUE -- added by CK block appearing inside of border, not below*/
+    width: 940px;
+    border: 1px solid #F44336;
+  }
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8 {
+    display: inline;
+    float: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 10px;
+  }
+/*end-from HTML and CSS CH 15 example*/
+.entry {
+        width: 220px;
+        float: left;
+        margin: 10px;
+        height: 262px;
+  }
+        /*background-image: url("images/shadow.png");*/
+/*        background-repeat: no-repeat;
+        background-position: bottom;}
+*/
+figure.class2  {
+        display: block;
+        width: 213px;
+        height: 272px;
+        background-color: #e7e3d8;
+        margin: 0;
+        padding: 9px;
+        text-align: left;
+  }
+
+
+/*figure img {
+        width: 211px;
+        height: 252px;
+        border: 1px solid #d6d6d6;
+  }*/
+
+/*figcaption {
+        background-image: url("images/icon.png");
+        padding-left: 20px;
+        background-repeat: no-repeat;}*/
+
+
+/*start-from HTML and CSS CH 16 website example*/
+
 
 /*start-from CodePen Don't Overthink It Grids*/
   * {
