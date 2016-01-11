@@ -1,11 +1,13 @@
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
-  font-family: "helvetica neue", helvetica, sans-serif;\
-  font-size: 1em;
+  color:#333;
+  font-family: "helvetica neue", helvetica, sans-serif;
+  font-size: 100%;
 }
 
 p {
-margin-left: 10px;
-text-align: left;
+  margin-left: 10px;
+  text-align: left;
 }
 
 h1 {
@@ -20,40 +22,19 @@ h1 {
   max-width: 1024px;
   margin: 0 auto;
 }
-
-.pagecontainer {
-  border: 1px dotted black;
-  font-family: Helvetica,sans-serif;
-  display: block;
-  float: left;
-  width: 100%;
-  height: 100%;
-  vertical-align: top;
-  margin-left: 20px;
-  margin-top: 80px;
-}
-
-
 footer {
-  border: 1px dotted black;
-  float: left;
-  width: 100%;
-  vertical-align: top;
   margin-left: 20px;
   margin-top: 10px;
-  display: inline-table;
 }
 
 #tk-logo {
   font-family: "acta-display", serif;
-  position: absolute;
   font-weight: 300; 
   font-size: 40px; 
   color: #333333;  
   margin-left: 20px;
   margin-top: 10px; 
   margin-bottom: 10px;
-  display: inline-table;
 }
 
 a {
@@ -80,8 +61,6 @@ a.class2:hover {
   line-height: 32px;
   text-decoration: underline;
 }
-
-
 a.class3 {
   font-family: "acta-display", serif;
   color: #333333;
@@ -133,14 +112,6 @@ figure.class1 {
   /*margin-end: 0px;*/
 }
 
-.header-area {
-  position: relative;
-  margin-left: 20px;
-  margin-top: 10px;
-  /*margin-bottom: 10px;*/
-  display: inline-table;
-}
-
 a.contactstyle {
   font-size: 14px;
   font-weight: bold;
@@ -157,25 +128,10 @@ a.contactstyle {
 a.contactstyle:hover {
   font-size: 14px;
   font-weight: bold;
-  text-decoration: underline;
-  font-family: Helvetica,sans-serif;
-  color: #000;
-  line-height: 3;
-  display: inline-table;
+  color: #333;
   /*position: absolute;
   margin-left: 40px;
   top: 620px;*/
-}
-
-.imagetitle {
-  font-size: 14px;
-  font-family: Helvetica,sans-serif;
-  font-style: italic;
-  color: #000;
-  line-height: 3;
-  margin-left: 750px;
-  position: absolute;
-  top: 664px;
 }
 
 /*start-from stackoverflow navigation*/
@@ -184,7 +140,6 @@ ul.leftNav {
         margin-left: 500px;
         margin-top: 20px;
         margin-bottom: 10px;
-        display: inline-table;
         padding:0;
         text-align: left;
         font-family: Helvetica, sans-serif;
@@ -249,3 +204,20 @@ figure.class2  {
   }
 /*end--NB Photo page. HTML and CSS CH 16 example*/
 
+.header-area {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
+  /*margin-bottom: 10px;*/
+  display: inline-table;
+}
+.imagetitle {
+  font-size: 14px;
+  font-family: Helvetica,sans-serif;
+  font-style: italic;
+  color: #000;
+  line-height: 3;
+  margin-left: 750px;
+  position: absolute;
+  top: 664px;
+}
