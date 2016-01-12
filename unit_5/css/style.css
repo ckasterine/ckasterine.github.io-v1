@@ -28,13 +28,6 @@ h1 {
   font-size: 1.5em;
 }
 
-footer {
-/*margin: auto;
-padding: 0;*/
-display: inline-block;
-background: yellow;
-}
-
 a.direct {
   text-decoration: none;
   color: #999;
@@ -66,6 +59,16 @@ a.sub:hover {
   color: #333;
   }
 
+a.contact {
+	text-decoration: none;
+	color: #999;
+}
+
+a.contact:hover {
+	color: #333;
+ 	text-decoration: underline;
+}
+
 img.align-center {
   display: block;
   margin: 0px auto;
@@ -94,89 +97,81 @@ figure.class1 {
   font-size: 40px; 
   color: #333;
   display: inline-table;
-  margin: 10px auto 10px 20px;
-  margin-top: ;
+  margin: 10px auto 10px 0;
 }
 
-/*start-from stackoverflow navigation*/
-ul.leftNav {
-        /*position: inherit*/;
-        margin: 300px, 20px, 10px;
-        color: #333;
-        text-align: left;
-        font-family: Helvetica, Arial, sans-serif;
-    }
+/* start Newburgh and Photography -- based on stackoverflow*/
+  ul.mainNav  li{
+    list-style: none;
+    display: inline-block;
+    color: #999;
+    padding: 4px 10px;
+    line-height: 20px;
+    position:relative;
+}
 
-    .leftNav li:hover {
-        /*background-color: transparent*/;
-        color: #333;
-    }
+  ul.mainSubNav {
+    position: absolute;
+    right:0;
+    margin: 4px 0 0 -20px;
+    padding: 0;
+    display: none;
+    white-space:nowrap;
+}
+/* end Newburgh and Photography */
 
-    ul.leftNav  li{
-        list-style: none;
-        display: inline-block;
-        color: #999;
-        padding: 4px 10px;
-        /*font-weight: bold;*/
-        line-height: 20px;
-        position:relative;
-    }
+/* start SubMenu */
+    ul.mainSubNav li {
+    padding: .5em .5em
+  	position: relative;
+}
 
-    ul.leftSubNav {
-        color: #333;
-        position: absolute;
-        right:0;
-        margin: 4px 0 0 -20px;
-        padding: 0;
-        display: none;
-        white-space:nowrap;
+  .mainNav li:hover ul.mainSubNav {
+	   display: inline-block;
+	   /*padding: auto 1em auto auto;*/
     }
+/* end SubMenu */
 
-/*submenu*/
-    ul.leftSubNav li {
-        /*padding: .5em .5em*/;
-        position: relative;
-    }
-
-    .leftNav li:hover ul.leftSubNav {
-        display: inline-block;
-        padding: auto 1em auto auto;
-    }
 /*end-from stackoverflow navigation*/
 
 /*start-NB Photo page. HTML and CSS book CH 16 example*/
-    .entry {
-        width: 220px;
-        float: left;
-        margin: 14px;
-        height: 262px;
-        background-color: transparent;
+.entry {
+	width: 220px;
+ 	float: left;
+	margin: 14px;
+	 height: 262px;
+	background-color: transparent;
   }
 
-    figure.class2  {
-        display: block;
-        margin: 0 auto;
-        padding: 4px;
+figure.class2  {
+	display: block;
+	margin: 0 auto;
+	padding: 4px;
   }
 /*end--NB Photo page. HTML and CSS CH 16 example*/
 
-#listheader {
-      color: #333;
-      padding: 0;
+#copyright {
+	text-decoration: none;
+	color: #999;
+	float: left;
 }
 
-/*ISSUE: Not floating right*/
 #imagetitle {
-  color: #333;
-  font-style: italic;
-  float: right;
-  background: red;
+	clear: both;
+	float: right;
+  	color: #999;
+  	font-style: italic;
+}
+
+#listheader {
+	color: #333;
+    padding: 0;
 }
 
 #wrapper {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 
