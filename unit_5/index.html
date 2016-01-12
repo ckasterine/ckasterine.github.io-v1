@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kasterine.com: Unit 4</title>
+	<title>Kasterine.com: Unit 5</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<!-- ISSUE 010516 - start jquery  not working -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
-<!-- 010516 - end jquery  not working -->
+
 	<script src="https://use.typekit.net/cja8inl.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
 	<div id="wrapper">
-		<p class="header-area" id="tk-logo">Dmitri Kasterine</p>
-		<nav>
-			<ul class="leftNav" id="navigation-nb">
-				<li>Newburgh Documentary <i class="fa fa-caret-down"></i>
-					<ul class="leftSubNav" id="navigation-nb">
-						<li><a href="02_nb_preview.html" class="class4">Preview</a></li>
-						<li><a href="03_nb_photos.html" class="class4">Photos</a></li>
-						<li><a href="04_nb_overview.html" class="class4">Project overview</a></li>
-					</ul>
-				</li>
-				<li>Photography <i class="fa fa-caret-down"></i>
-					<ul class="leftSubNav">
-			                        <li class="listheader">Galleries</li>
-			                       	<li><a href="#" class="class4">1</a></li>
-			                       	<li><a href="#" class="class4">2</a></li>
-			                        <li><a href="#" class="class4">3</a></li>
-			                        <li><a href="#" class="class4">4</a></li>
-			                        <li><a href="#" class="class4">5</a></li>
-			                        <li><a href="#" class="class4">6</a></li>
-			                        <li><a href="#" class="class4">7</a></li>
-			                        <li><a href="#" class="class4">8</a></li>
-					</ul>
-				</li>
-				<li><a href="#" class="class2">Biography</a></li>
-				<li><a href="http://kasterine.blogspot.com/" class="class2">Blog</a></li>
-			</ul>
-		</nav>
-		<div class="pagecontainer">
-			<img src="images/01_kasterine_home.jpg" alt="Newburgh: Beauty and Tragedy film still" class="heroimage">
-		</div>
+		<header>
+			<p class="logo">Dmitri Kasterine</p>
+			<nav>
+				<ul class="leftNav">
+					<li>Newburgh Documentary <i class="fa fa-caret-down"></i>
+						<ul class="leftSubNav">
+							<li><a href="02_nb_preview.html" class="sub">Preview</a></li>
+							<li><a href="03_nb_photos.html" class="sub">Photos</a></li>
+							<li><a href="04_nb_overview.html" class="sub">Project overview</a></li>
+						</ul>
+					</li>
+					<li>Photography <i class="fa fa-caret-down"></i>
+						<ul class="leftSubNav">
+							<li id="listheader">Galleries:</li>
+							<li><a href="#" class="sub">1</a></li>
+		                   	<li><a href="#" class="sub">2</a></li>
+		                    <li><a href="#" class="sub">3</a></li>
+		                    <li><a href="#" class="sub">4</a></li>
+		                    <li><a href="#" class="sub">5</a></li>
+		                    <li><a href="#" class="sub">6</a></li>
+		                    <li><a href="#" class="sub">7</a></li>
+		                    <li><a href="#" class="sub">8</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="direct">Biography</a></li>
+					<li><a href="http://kasterine.blogspot.com/" class="direct">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<img src="images/01_kasterine_home.jpg" alt="Newburgh: Beauty and Tragedy film still" class="home">
+		</main>
 		<footer>
-			<a href="mailto:dmitri@kasterine.com" class="class2">dmitri@kasterine.com</a>
-			<p class="imagetitle">Newburgh NY: Beauty and Tragedy, film still</p>
+				<p>&#169; <a href="mailto:dmitri@kasterine.com" class="direct">Dmitri Kasterine</a>
+				<span id="imagetitle">Film still from Newburgh NY: Beauty and Tragedy</span></p>
 		</footer>   
 	</div>
 </body>

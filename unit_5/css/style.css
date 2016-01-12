@@ -1,92 +1,69 @@
-* { margin:0; padding:0; box-sizing:border-box; }
+/** { margin:0; padding:0; box-sizing:border-box; }*/
 body {
   color:#333;
-  font-family: "helvetica neue", helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
+  text-align: left;
+  margin:0;
+  padding:0;
+/*  box-sizing:border-box; 
+*/}
+
+header {
+ /* background-color: red;*/
+  margin-top: .5em;
 }
 
-p {
-  margin-left: 10px;
-  text-align: left;
+nav {
+  float: right;
+}
+
+p{
+  margin: 0;
+  display: block;
 }
 
 h1 {
   text-align: center;
-  color: #333333;
-  margin: 0 auto;
   font-size: 1.5em;
 }
 
-#wrapper {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-}
 footer {
-  margin-left: 20px;
-  margin-top: 10px;
+/*margin: auto;
+padding: 0;*/
+display: inline-block;
+background: yellow;
 }
 
-#tk-logo {
-  font-family: "acta-display", serif;
-  font-weight: 300; 
-  font-size: 40px; 
-  color: #333333;  
-  margin-left: 20px;
-  margin-top: 10px; 
-  margin-bottom: 10px;
-}
-
-a {
+a.direct {
   text-decoration: none;
-  color: #000;
+  color: #999;
+}
+
+a.direct:hover {
+  color: #333;
   text-decoration: underline;
 }
 
-a:hover {
-  color: #000;
-}
-
-a.class2 {
-  font-family: Helvetica, sans-serif;
-  text-decoration: none;
-  padding: 4px 8px;
-  line-height: 32px;
-  color: #999999;
-}
-
-a.class2:hover {
-  color: #94210C;
-  padding: 4px 8px;
-  line-height: 32px;
-  text-decoration: underline;
-}
-a.class3 {
+a.logo {
   font-family: "acta-display", serif;
   color: #333333;
   text-decoration: none;
 }
 
-a.class3:hover {
+a.logo:hover {
   font-family: "acta-display", serif;
-  /*color: #333333;*/
   text-decoration: none;
 }
 
-a.class4 {
-  font-weight: normal;
+a.sub {
   text-decoration: none;
-  padding: 4px 8px;
-  line-height: 32px;
-  color: #94210C;
+  color: #333;
 }
 
-a.class4:hover {
-  font-weight: normal;
-  color: #666666;
-  padding: 4px 8px;
-  line-height: 32px;
+a.sub:hover {
   text-decoration: underline;
+  color: #333;
   }
 
 img.align-center {
@@ -94,9 +71,8 @@ img.align-center {
   margin: 0px auto;
 }
 
-img.large {
+img.home {
   width:1024 px;
-  height: 568 px;
 }
 
 img.medium {
@@ -112,55 +88,42 @@ figure.class1 {
   /*margin-end: 0px;*/
 }
 
-a.contactstyle {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: Helvetica,sans-serif;
-  color: #999999;
-  line-height: 3;
-  display: inline-table;
-  /*position: absolute;
-  margin-left: 40px;
-  top: 620px;*/
-}
-
-a.contactstyle:hover {
-  font-size: 14px;
-  font-weight: bold;
+.logo {
+  font-family: "acta-display", serif;
+  font-weight: 300; 
+  font-size: 40px; 
   color: #333;
-  /*position: absolute;
-  margin-left: 40px;
-  top: 620px;*/
+  display: inline-table;
+  margin: 10px auto 10px 20px;
+  margin-top: ;
 }
 
 /*start-from stackoverflow navigation*/
 ul.leftNav {
-        position: absolute;
-        margin-left: 500px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        padding:0;
+        /*position: inherit*/;
+        margin: 300px, 20px, 10px;
+        color: #333;
         text-align: left;
-        font-family: Helvetica, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
     }
 
     .leftNav li:hover {
-        background-color: transparent;
-        color: #94210C;
+        /*background-color: transparent*/;
+        color: #333;
     }
 
     ul.leftNav  li{
         list-style: none;
         display: inline-block;
-        color: #999999;
+        color: #999;
         padding: 4px 10px;
-        font-weight: bold;
-        line-height: /*32px*/ 20px;
+        /*font-weight: bold;*/
+        line-height: 20px;
         position:relative;
     }
 
     ul.leftSubNav {
+        color: #333;
         position: absolute;
         right:0;
         margin: 4px 0 0 -20px;
@@ -171,25 +134,18 @@ ul.leftNav {
 
 /*submenu*/
     ul.leftSubNav li {
-        background-color: transparent;
-        /*list-style: none;*/
-        display: inline;
-        color: black;
-        padding: 4px 8px;
-        font-weight: normal;
+        /*padding: .5em .5em*/;
         position: relative;
-        line-height: 10px;
     }
 
     .leftNav li:hover ul.leftSubNav {
         display: inline-block;
-        background-color: transparent;
-        padding: 2px 8px;
+        padding: auto 1em auto auto;
     }
 /*end-from stackoverflow navigation*/
 
 /*start-NB Photo page. HTML and CSS book CH 16 example*/
-.entry {
+    .entry {
         width: 220px;
         float: left;
         margin: 14px;
@@ -197,27 +153,32 @@ ul.leftNav {
         background-color: transparent;
   }
 
-figure.class2  {
+    figure.class2  {
         display: block;
         margin: 0 auto;
         padding: 4px;
   }
 /*end--NB Photo page. HTML and CSS CH 16 example*/
 
-.header-area {
-  position: relative;
-  margin-left: 20px;
-  margin-top: 10px;
-  /*margin-bottom: 10px;*/
-  display: inline-table;
+#listheader {
+      color: #333;
+      padding: 0;
 }
-.imagetitle {
-  font-size: 14px;
-  font-family: Helvetica,sans-serif;
+
+/*ISSUE: Not floating right*/
+#imagetitle {
+  color: #333;
   font-style: italic;
-  color: #000;
-  line-height: 3;
-  margin-left: 750px;
-  position: absolute;
-  top: 664px;
+  float: right;
+  background: red;
 }
+
+#wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+
+
