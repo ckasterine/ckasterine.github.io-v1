@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Kasterine.com: Unit 4 Newburgh Photos Duckett Chap_16</title>
-<!-- ISSUE 010516 - start jquery  not working -->
-    <script src="https://rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js"></script>
-<!-- 010516 - end jquery  not working -->
-
+  <head>
+    <title>Kasterine.com: Unit 5</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
     <script src="https://use.typekit.net/cja8inl.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-<body>
-<div id="wrapper">
-  <div class="header-area" id="tk-logo"><a href="index.html" class="class3">Dmitri Kasterine</a></div>
-  <nav>
-  <ul class="leftNav" id="navigation-nb">
-
-<!-- ISSUE 010516 - start jquery  not working -->            
-  <li // direct event
-$('.touch').on('tap', function(e) {
-    console.log(this, e);
-});
-
-// delegated event
-$('.parent').on('tap', '.touch', function(e) {
-    console.log(this, e);
-});>
-<!-- 010516 - end jquery  not working -->
-Newburgh Documentary <i class="fa fa-caret-down" style="font-size:18px"></i>
-
-<!-- ISSUE 010616 - submenu displaying improperly on Safari see Kasterine.com_Safari_submenu and Kasterine.com_Chrome_submenu -->
-                      <ul class="leftSubNav" id="navigation-nb">
-                         <a href="#" class="class4">Preview</a>
-                         <a href="03_nb_photos.html" class="class4">Photos</a>
-                         <a href="04_nb_overview.html" class="class4">Project overview</a>
-                      </ul>
-              </li>
-
-              <li>Photography <i class="fa fa-caret-down" style="font-size:18px"></i>
-                      <ul class="leftSubNav">
-                          Galleries
-                          <a href="#" class="class4">1</a>
-                          <a href="#" class="class4">2</a>
-                          <a href="#" class="class4">3</a>
-                          <a href="#" class="class4">4</a>
-                          <a href="#" class="class4">5</a>
-                          <a href="#" class="class4">6</a>
-                          <a href="#" class="class4">7</a>
-                          <a href="#" class="class4">8</a>
-                      </ul>
-              </li>
-<!-- ISSUE 010616 - end submenu problem  -->
-              <li><a href="#" class="class2">Biography</a></li>
-              
-              <li><a href="http://kasterine.blogspot.com/" class="class2">Blog</a></li>
-  </nav>
-
-<div class="pagecontainer">
-<iframe src="https://player.vimeo.com/video/128585882?title=0&byline=0&portrait=0" width="1024" height="576" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/128585882”></a></p>
-</div>
-<footer>
-  <div class="contactstyle">
-  <a href="mailto:dmitri@kasterine.com" class="class2">dmitri@kasterine.com</a>
-  </div>
-</footer> 
-
-</div>
-</body>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <p class="logo"><a href="index.html" class="logohome">Dmitri Kasterine</a></p>
+        <nav>
+          <ul class="mainNav">
+  <!--ISSUE Ask mentor about drop down caret-->
+            <li>Newburgh Documentary
+              <ul class="mainSubNav">
+                <li id="currentpage">Preview</li>
+                <li><a href="03_nb_photos.html" class="sub">Photos</a></li>
+                <li><a href="04_nb_overview.html" class="sub">Project overview</a></li>
+              </ul>
+            </li>
+            <li>Photography
+              <ul class="mainSubNav">
+                <li id="listheader">Galleries:</li>
+                <li><a href="#" class="sub">1</a></li>
+                          <li><a href="#" class="sub">2</a></li>
+                          <li><a href="#" class="sub">3</a></li>
+                          <li><a href="#" class="sub">4</a></li>
+                          <li><a href="#" class="sub">5</a></li>
+                          <li><a href="#" class="sub">6</a></li>
+                          <li><a href="#" class="sub">7</a></li>
+                          <li><a href="#" class="sub">8</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="direct">Biography</a></li>
+            <li><a href="http://kasterine.blogspot.com/" class="direct">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <p><iframe src="https://player.vimeo.com/video/128585882?title=0&byline=0&portrait=0" width="1024" height="576" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+  <footer>
+        <p> &#169; <a href="mailto:dmitri@kasterine.com" class="contact"> Dmitri Kasterine</a>
+        <span id="imagetitle">Preview of  Newburgh NY: Beauty and Tragedy</span> </p>
+      </footer>   
+    </div>
+  </body>
 </html>

@@ -21,6 +21,7 @@ nav {
 p{
   margin: 0;
   display: block;
+  line-height: 1.5em;
 }
 
 h1 {
@@ -28,25 +29,8 @@ h1 {
   font-size: 1.5em;
 }
 
-a.direct {
-  text-decoration: none;
-  color: #999;
-}
-
-a.direct:hover {
-  color: #333;
-  text-decoration: underline;
-}
-
-a.logo {
-  font-family: "acta-display", serif;
-  color: #333333;
-  text-decoration: none;
-}
-
-a.logo:hover {
-  font-family: "acta-display", serif;
-  text-decoration: none;
+img.home {
+  width:1024 px;
 }
 
 a.sub {
@@ -60,35 +44,34 @@ a.sub:hover {
   }
 
 a.contact {
-	text-decoration: none;
-	color: #999;
+  text-decoration: none;
+  color: #999;
 }
 
 a.contact:hover {
-	color: #333;
- 	text-decoration: underline;
+  color: #333;
+  text-decoration: underline;
 }
 
-img.align-center {
-  display: block;
-  margin: 0px auto;
+a.direct {
+  text-decoration: none;
+  color: #999;
 }
 
-img.home {
-  width:1024 px;
+a.direct:hover {
+  color: #333;
+  text-decoration: underline;
 }
 
-img.medium {
-  width:765 px;
-  height: 400 px;
+a.logohome {
+  font-family: "acta-display", serif;
+  color: #333333;
+  text-decoration: none;
 }
 
-figure.class1 {
-  display: inline-block;
-  /*margin: 1em;*/
-  margin-left: 0;
-  margin-top: 0;
-  /*margin-end: 0px;*/
+a.logohome:hover {
+  font-family: "acta-display", serif;
+  text-decoration: none;
 }
 
 .logo {
@@ -101,6 +84,18 @@ figure.class1 {
 }
 
 /* start Newburgh and Photography -- based on stackoverflow*/
+ul.mainNav {
+  position: inherit*;
+  margin: 300px, 20px, 10px;
+  color: #333;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.mainNav li:hover {
+  color: #333;
+    }
+
   ul.mainNav  li{
     list-style: none;
     display: inline-block;
@@ -135,18 +130,19 @@ figure.class1 {
 /*end-from stackoverflow navigation*/
 
 /*start-NB Photo page. HTML and CSS book CH 16 example*/
-.entry {
-	width: 220px;
+.nbphotos_entry {
+	/*width: 220px;*/
  	float: left;
-	margin: 14px;
-	 height: 262px;
-	background-color: transparent;
+	margin: 1em;
+	/*height: 262px;*/
   }
 
-figure.class2  {
+img.nbphotos  {
 	display: block;
 	margin: 0 auto;
-	padding: 4px;
+	padding: 2px;
+  width: 220px;
+ /* height: 100%;*/
   }
 /*end--NB Photo page. HTML and CSS CH 16 example*/
 
@@ -165,7 +161,8 @@ figure.class2  {
 
 #listheader {
 	color: #333;
-    padding: 0;
+  padding: 0;
+  font-weight: bold;
 }
 
 #wrapper {
@@ -174,6 +171,9 @@ figure.class2  {
 	margin: 0 auto;
 }
 
-
+#currentpage {
+  color: #333;
+  font-weight: bold;
+}
 
 
