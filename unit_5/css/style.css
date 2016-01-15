@@ -197,6 +197,7 @@ img.nbphotos  {
 .left-col {
   float: left;
   width: 65%;
+  padding: 20px;
   text-align: justify;
   margin: 0 20px 0 0;
 }
