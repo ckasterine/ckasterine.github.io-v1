@@ -1,0 +1,325 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  color:#333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  text-align: left;
+  margin:0;
+  padding:0;
+/*  box-sizing:border-box; 
+*/}
+
+header {
+ /* background-color: red;*/
+  margin-top: .5em;
+}
+
+nav {
+  float: right;
+}
+
+p{
+  display: block;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  margin: 10px 0 0 0;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: left;
+  text-transform: uppercase;
+  color: #333;
+  margin: 30px 0 0 0;
+}
+
+hr {
+  width: 100%;
+  display: block;
+  height: 1px;
+  color: #333;
+  background-color: #333;
+  border: none;
+}
+
+footer {
+  clear: both;
+  padding: 10px;
+}
+
+img.home {
+  width:1024 px;
+}
+
+img.overview-top{
+  width: 998px;
+  padding: 2px;
+}
+
+img.overview-mid{
+  width: 800px;
+  padding: 2px;
+}
+
+img.align-center {
+  display: block;
+  margin: 0px auto;
+}
+
+img.overview-article {
+  width: 300px;
+  padding: 2px;
+  position: relative;
+  float: top right;
+  display: block;
+  background-color: #999;
+}
+
+img.overview-article-lft {
+  width: 300px;
+  padding: 2px;
+  position: relative;
+  float: top left;
+  display: block;
+  background-color: #999;
+}
+
+a.sub {
+  text-decoration: none;
+  color: #333;
+}
+
+a.sub:hover {
+  text-decoration: underline;
+  color: #333;
+  }
+
+a.contact {
+  color: #999;
+  text-decoration: none;
+}
+
+a.contact:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+a.attribution-link {
+  color: #999;
+  text-decoration: none;
+  float: right;
+}
+
+a.attribution-link:hover  {
+  color: #333;
+  text-decoration: underline;
+  float: right;
+}
+
+a.direct {
+  text-decoration: none;
+  color: #999;
+}
+
+a.direct:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+a.logohome {
+  font-family: "acta-display", serif;
+  color: #333333;
+  text-decoration: none;
+}
+
+a.logohome:hover {
+  font-family: "acta-display", serif;
+  text-decoration: none;
+}
+
+h2.rght {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: right;
+  text-transform: uppercase;
+  color: #333;
+  margin: 30px 20px 0 0;
+}
+
+hr.mid {
+  width: 70%;
+  display: block;
+  height: 1px;
+  color: #333;
+  background-color: #333;
+  border: none;
+  margin: 0 auto;
+}
+
+p.overview-txt{
+  font-size: 1em;
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 0 10px 20px 0;
+}
+
+.logo {
+  font-family: "acta-display", serif;
+  font-weight: 300; 
+  font-size: 40px; 
+  color: #333;
+  display: inline-table;
+  margin: 10px auto 10px 0;
+}
+
+/* start Newburgh and Photography -- based on stackoverflow*/
+ul.mainNav {
+  position: inherit*;
+  margin: 300px, 20px, 10px;
+  color: #333;
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.mainNav li:hover {
+  color: #333;
+    }
+
+  ul.mainNav  li{
+    list-style: none;
+    display: inline-block;
+    color: #999;
+    padding: 10px 10px;
+    line-height: 20px;
+    position:relative;
+}
+
+  ul.mainSubNav {
+    position: absolute;
+    right:0;
+    margin: 4px 0 0 -20px;
+    padding: 0;
+    display: none;
+    white-space:nowrap;
+}
+/* end Newburgh and Photography */
+
+/* start SubMenu */
+    ul.mainSubNav li {
+    padding: .5em .5em
+  	position: relative;
+}
+
+  .mainNav li:hover ul.mainSubNav {
+	   display: inline-block;
+	   /*padding: auto 1em auto auto;*/
+    }
+/* end SubMenu */
+
+/*end-from stackoverflow navigation*/
+
+/*start-NB Photo page. HTML and CSS book CH 16 example*/
+.nbphotos_entry {
+	/*width: 220px;*/
+ 	float: left;
+	margin: 1em;
+	/*height: 262px;*/
+  }
+
+img.nbphotos  {
+	display: block;
+	margin: 0 auto;
+	padding: 3px;
+  width: 224px;
+ /* height: 100%;*/
+  }
+/*end--NB Photo page. HTML and CSS CH 16 example*/
+
+.attribution {
+  color: #999;
+  font-style: italic;
+  display: block;
+  float: right;
+  padding-bottom: 20px;
+  /*margin: 0 0 10px 0;*/
+}
+
+.callout{
+  /*background-color: #EEF5DB;*/
+  font-size: 1.1em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px;
+}
+
+.left-col {
+  float: left;
+  width: 65%;
+/*  padding: 20px;
+*/  text-align: justify;
+  margin: 0 20px 0 0;
+}
+
+.rght-col {
+  float: right;
+  width: 65%;
+/*  padding: 20px;
+*/  text-align: justify;
+  margin: 0 20px 0 0;
+}
+#copyright {
+	text-decoration: none;
+	color: #999;
+	float: left;
+  position: relative;
+}
+
+#listheader {
+  color: #333;
+  padding: 0;
+  font-weight: bold;
+}
+
+#imagetitle {
+	clear: both;
+	float: right;
+  color: #999;
+  font-style: italic;
+}
+
+#subtext {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .75em;
+  font-weight: lighter;
+  font-style: italic;
+  color: #333;
+}
+
+#wrapper {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+#currentpage {
+  color: #333;
+  font-weight: bold;
+}
+
+
