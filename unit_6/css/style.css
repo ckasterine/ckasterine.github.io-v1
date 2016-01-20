@@ -25,18 +25,18 @@ p{
 }
 
 h1 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: #333;
   margin: 10px 0 0 0;
 }
 
 h2 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-size: 1.3em;
   font-weight: lighter;
   text-decoration: none;
@@ -47,6 +47,7 @@ h2 {
 }
 
 hr {
+  clear:both;
   width: 100%;
   display: block;
   height: 1px;
@@ -72,6 +73,7 @@ img.overview-top{
 img.overview-mid{
   width: 800px;
   padding: 2px;
+  background-color: #999;
 }
 
 img.align-center {
@@ -81,11 +83,12 @@ img.align-center {
 
 img.overview-article {
   width: 300px;
+ /* float: right;*/
+ /*ISSUE: Removing float aligned image*/
   padding: 2px;
-  position: relative;
-  float: top right;
-  display: block;
+  display: inline;
   background-color: #999;
+  margin: -50px 0 30px 40px;
 }
 
 img.overview-article-lft {
@@ -117,6 +120,26 @@ a.contact:hover {
   text-decoration: underline;
 }
 
+a.rght-attribution-link {
+  /*clear:both;*/
+  text-align: right;
+  display: block;
+  width: 99%;
+  color: #999;
+  text-decoration: none;
+  float: left;
+}
+
+a.rght-attribution-link:hover  {
+  /*clear:both;*/
+  text-align: right;
+  display: block;
+  width: 99%;
+  color: #333;
+  text-decoration: underline;
+  float: left;
+}
+
 a.attribution-link {
   color: #999;
   text-decoration: none;
@@ -128,7 +151,6 @@ a.attribution-link:hover  {
   text-decoration: underline;
   float: right;
 }
-
 a.direct {
   text-decoration: none;
   color: #999;
@@ -151,7 +173,7 @@ a.logohome:hover {
 }
 
 h2.rght {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-size: 1.3em;
   font-weight: lighter;
   text-decoration: none;
@@ -162,13 +184,14 @@ h2.rght {
 }
 
 hr.mid {
+  clear:both;
   width: 70%;
   display: block;
   height: 1px;
   color: #333;
   background-color: #333;
   border: none;
-  margin: 0 auto;
+  margin: auto;
 }
 
 p.overview-txt{
@@ -260,20 +283,31 @@ img.nbphotos  {
   /*margin: 0 0 10px 0;*/
 }
 
+.rght-attribution {
+  clear:both;
+  text-align: right;
+  color: #999;
+  font-style: italic;
+  display: block;
+  float: left;
+  width: 60%;
+  text-decoration: none;
+
+}
+
+
 .callout{
   /*background-color: #EEF5DB;*/
   font-size: 1.1em;
-  width: 80%;
+  /*width: 80%;*/
   margin: 0 auto;
   padding: 10px 10px 10px 10px;
 }
 
 .left-col {
   float: left;
-  width: 65%;
-/*  padding: 20px;
-*/  text-align: justify;
-  margin: 0 20px 0 0;
+  width: 60%;
+  text-align: justify;
 }
 
 .rght-col {
@@ -283,6 +317,7 @@ img.nbphotos  {
 */  text-align: justify;
   margin: 0 20px 0 0;
 }
+
 #copyright {
 	text-decoration: none;
 	color: #999;
