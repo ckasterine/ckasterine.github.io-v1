@@ -5,8 +5,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
   text-align: left;
-  margin:0;
-  padding:0;
 /*  box-sizing:border-box; 
 */}
 
@@ -19,39 +17,38 @@ nav {
   float: right;
 }
 
-p{
+p {
   display: block;
   line-height: 1.5em;
 }
 
-h1 {
+/*h1 {
   font-family: inherit;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
   text-align: left;
   text-transform: uppercase;
   color: #333;
   margin: 10px 0 0 0;
-}
+}*/
 
 h2 {
   font-family: inherit;
   font-size: 1.3em;
-  font-weight: lighter;
+  font-weight: 300;
   text-decoration: none;
   text-align: left;
   text-transform: uppercase;
   color: #333;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 hr {
   clear:both;
   width: 100%;
   display: block;
-  height: 1px;
-  color: #333;
+  height: .05em;
   background-color: #333;
   border: none;
 }
@@ -67,11 +64,14 @@ img.home {
 
 img.overview-top{
   width: 998px;
+  margin: 0 auto;
   padding: 2px;
+  background-color: #999;
 }
 
 img.overview-mid{
   width: 800px;
+  margin: 0 auto;
   padding: 2px;
   background-color: #999;
 }
@@ -120,33 +120,13 @@ a.contact:hover {
   text-decoration: underline;
 }
 
-a.rght-attribution-link {
-  /*clear:both;*/
-  text-align: right;
-  display: block;
-  width: 99%;
-  color: #999;
-  text-decoration: none;
-  float: left;
-}
-
-a.rght-attribution-link:hover  {
-  /*clear:both;*/
-  text-align: right;
-  display: block;
-  width: 99%;
-  color: #333;
-  text-decoration: underline;
-  float: left;
-}
-
-a.attribution-link {
+a.citation-link {
   color: #999;
   text-decoration: none;
   float: right;
 }
 
-a.attribution-link:hover  {
+a.citation-link:hover  {
   color: #333;
   text-decoration: underline;
   float: right;
@@ -175,23 +155,22 @@ a.logohome:hover {
 h2.rght {
   font-family: inherit;
   font-size: 1.3em;
-  font-weight: lighter;
+  font-weight: 300;
   text-decoration: none;
   text-align: right;
   text-transform: uppercase;
   color: #333;
-  margin: 30px 20px 0 0;
+  margin: 20px 20px 0 0;
 }
 
 hr.mid {
   clear:both;
-  width: 70%;
+  width: 80%;
   display: block;
-  height: 1px;
-  color: #333;
+  height: .05em;
   background-color: #333;
   border: none;
-  margin: auto;
+  margin: 0 auto;
 }
 
 p.overview-txt{
@@ -274,47 +253,54 @@ img.nbphotos  {
   }
 /*end--NB Photo page. HTML and CSS CH 16 example*/
 
-.attribution {
+.citation {
   color: #999;
   font-style: italic;
   display: block;
   float: right;
   padding-bottom: 20px;
-  /*margin: 0 0 10px 0;*/
 }
 
-.rght-attribution {
+.rght-citation {
+  clear:both;
+/*  text-align: right;
+*/  color: #999;
+  font-style: italic;
+  display: block;
+  float: right;
+  /*width: 60%;*/
+  text-decoration: none;
+}
+
+.lft-citation {
   clear:both;
   text-align: right;
   color: #999;
   font-style: italic;
   display: block;
   float: left;
-  width: 60%;
+  width: 65%;
   text-decoration: none;
-
 }
-
 
 .callout{
   /*background-color: #EEF5DB;*/
-  font-size: 1.1em;
-  /*width: 80%;*/
+  font-size: 1em;
+  width: 80%;
   margin: 0 auto;
   padding: 10px 10px 10px 10px;
 }
 
 .left-col {
   float: left;
-  width: 60%;
+  width: 65%;
   text-align: justify;
 }
 
 .rght-col {
   float: right;
   width: 65%;
-/*  padding: 20px;
-*/  text-align: justify;
+  text-align: justify;
   margin: 0 20px 0 0;
 }
 
@@ -356,5 +342,3 @@ img.nbphotos  {
   color: #333;
   font-weight: bold;
 }
-
-
