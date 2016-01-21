@@ -245,6 +245,7 @@ ul.mainNav {
   }
 
 img.nbphotos  {
+  clear: both;
 	display: block;
 	margin: 0 auto;
 	padding: 3px;
