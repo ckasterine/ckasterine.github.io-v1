@@ -1,0 +1,333 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing:border-box;
+ }
+
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  text-align: left;
+}
+
+footer {
+  clear: both;
+  padding: 10px;
+}
+
+/*ISSUE-Would like the header to remain fixed but causes nav to hide go to the right and hide behind logo.*/ 
+/*header {
+  display: inline;
+  position: fixed;
+}
+*/
+
+hr {
+  clear: both;
+  width: 100%;
+  display: block;
+  height: .05em;
+  background-color: #333;
+  border: none;
+}
+
+nav {
+  background-color: red;
+/*  clear: both;
+  width: 50%;*/
+  float: right;
+  /*position: fixed;*/
+}
+
+p {
+  font-size: 1em;
+  display: block;
+  line-height: 1.5em;
+}
+
+a.contact {
+  color: #999;
+  text-decoration: none;
+}
+
+a.contact:hover {
+  color: #;
+  text-decoration: underline;
+}
+
+a.citation-link {
+  color: #333;
+  font-style: italic;
+  text-decoration: none;
+  float: right;
+  /*background-color: yellow;*/
+}
+
+a.citation-link:hover  {
+  color: #333;
+  font-style: italic;
+  text-decoration: underline;
+  float: right;
+}
+
+a.home {
+  float: left;
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+  padding: 1em;
+}
+
+a.home:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #663333;
+}
+
+a.logo-link {
+  font-family: "acta-display", serif;
+  color: #333;
+  text-decoration: none;
+}
+
+a.logo-link:hover {
+  font-family: "acta-display", serif;
+  text-decoration: none;
+}
+
+h1 { 
+  font-size: 1.5em;
+  font-weight: 200;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+}
+
+h1.nb-header {
+  padding: .5em 1em .5em 1em;
+  display: block;
+}
+
+h1.nb-photos-header {
+  padding: .5em 1em .5em 0;
+  margin: 0;
+  text-align: left;
+  width: 65%;
+  float: right;
+}
+
+h1.nb-book-header {
+  padding: .5em 1em .5em 0;
+  margin: 0;
+  text-align: right;
+  width: 65%;
+  float: left;
+  padding: 4em 2em 8.68em 2em;
+}
+
+img.nb-photos {
+  width: 33%;
+  }
+
+img.nb-book {
+  width: 40%;
+  }
+
+img.nb-align-center {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+}
+
+p.nb-film-txt {
+  width: 100%; 
+  text-align: justify;
+  padding: 1em 4em 3em 4em;
+  background-color: #fff;
+}
+
+p.nb-wal-txt{
+  font-size: 1.1em;
+  width: 100%; 
+  text-align: justify;
+  /*margin: 75em 0 1em 0;*/
+  padding: 1em 4em 1em 4em;
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+#nb-photos-rght-col {
+  float: right;
+  width: 67%;
+  background-color: #fff;
+  padding: 1em 1em 3.2em 1em;
+}
+
+#nb-book-lft-col {
+  float: left;
+  width: 60%;
+  background-color: #fff;
+  padding: 4em 2em 8.68em 2em;
+}
+
+#copyright {
+  text-decoration: none;
+  color: #999;
+  width:100%;
+  float: left;
+  position: relative;
+}
+
+#nb-subtext {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .75em;
+  font-weight: lighter;
+  font-style: italic;
+  text-transform: none;
+  color: #fff;
+}
+
+#home-footer {
+  clear: both;
+  width: 100%;
+  position: absolute;
+  float: left;
+  display: block;
+  background color: red;
+  margin: 52em 0 0 -10em;
+  /*padding: 10px;*/
+}
+
+#home-img {
+  background: url("../images/01_kasterine_home.jpg") no-repeat center center fixed;
+  background-color: #fff;
+  background-size: 90%;
+}
+
+#home-imgtitle {
+  float: right;
+  color: #333;
+  font-style: italic;
+  font-weight: 300;
+  text-align: right;
+}
+
+#home-logo {
+  text-transform: uppercase;
+  font-family: "acta-display", serif;
+  font-weight: 300; 
+  font-size: 2em; 
+  color: #333;
+  display: inline;
+  margin: 0 0 .5em -4em;
+  position: absolute;
+  background-color: yellow;
+}
+
+#nb-pge-colr {
+background-color: #333;
+}
+
+#nb-film-sect {
+  background-color: #333;
+}
+
+#nb-photos-sect {
+  background-color: #999;
+  height: 4em;
+}
+
+#page-footer {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  float: left;
+  display: block;
+  padding: 10px;
+}
+
+/*#pages-header {
+  margin: 0 auto;
+  padding: .5em;
+  width: 100%;
+  height: 5em;
+  display: block;
+  background-color: #333;
+  opacity: 0.75;
+} 
+*/
+
+/*#pages-logo {
+  font-family: "acta-display", serif;
+  font-weight: 300; 
+  font-size: 2em; 
+  color: #fff;
+  display: inline-table;
+  margin: .05em 0 .05em 0;
+}*/
+
+/*#galleries-header {
+  margin: 0 auto;
+  position: absolute;
+  padding: .5em;
+  width: 100%;
+  height: 5em;
+  display: block;
+}*/
+
+/*#galleries-logo {
+  float: left;
+  text-transform: uppercase;
+  font-family: "acta-display", serif;
+  font-weight: 300; 
+  font-size: 1.5em; 
+  color: #333;
+  display: inline-table;
+  margin: .5em auto .2em 1.5em;
+}*/
+
+#galleries-kubrick {
+  /*clear: both;*/
+  width: 50%;
+  float: left;
+  margin: -23em 35em 30em 40em;
+/*  display: block;*/
+  }
+
+#gallerie-s01-row1a {
+  float: left;
+  width: 25%;
+  margin: 11em 0 0 1em;
+  /*display: inline;*/
+}
+
+#gallerie-s01-row1b {
+  /*clear: both;*/
+  width: 25%;
+  float: left;
+  margin: 8em 0 0 5em;
+  /*display: inline;*/
+}
+
+#gallerie-s01-row2a {
+  width: 25%;
+  float: left;
+  margin: -50em 0 0 1em;
+  display: block;
+}
+
+#gallerie-s01-row2b{
+  width: 25%;
+  float: left;
+  margin: -50em 0 0 22em;
+  display: block;
+}
+
