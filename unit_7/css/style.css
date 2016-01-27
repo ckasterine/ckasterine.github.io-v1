@@ -16,13 +16,6 @@ footer {
   padding: 10px;
 }
 
-/*ISSUE-Would like the header to remain fixed but causes nav to hide go to the right and hide behind logo.*/ 
-/*header {
-  display: inline;
-  position: fixed;
-}
-*/
-
 hr {
   clear: both;
   width: 100%;
@@ -33,11 +26,8 @@ hr {
 }
 
 nav {
-  background-color: red;
-/*  clear: both;
-  width: 50%;*/
+  background-color: white;
   float: right;
-  /*position: fixed;*/
 }
 
 p {
@@ -61,7 +51,6 @@ a.citation-link {
   font-style: italic;
   text-decoration: none;
   float: right;
-  /*background-color: yellow;*/
 }
 
 a.citation-link:hover  {
@@ -69,6 +58,20 @@ a.citation-link:hover  {
   font-style: italic;
   text-decoration: underline;
   float: right;
+}
+
+a.galleries {
+  float: left;
+  text-decoration: none;
+  font-weight: 700;
+  color: #999;
+/*  padding: 1em;*/
+}
+
+a.galleries:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #333;
 }
 
 a.home {
@@ -94,6 +97,17 @@ a.logo-link {
 a.logo-link:hover {
   font-family: "acta-display", serif;
   text-decoration: none;
+}
+
+a.sub {
+  color: #333;
+  text-decoration: none;
+}
+
+a.sub:hover {
+  text-decoration: underline;
+  color: #333;
+  /*background-color: #999;*/
 }
 
 h1 { 
@@ -157,10 +171,69 @@ p.nb-wal-txt{
   background-color: #fff;
 }
 
+
+p.photo-text {
+  clear: both;
+  font-size: 1.1em;
+  width: 100%; 
+  text-align: justify;
+  /*margin: 40em 0 1em 0;*/
+  padding: 1em 4em 1em 4em;
+  background-color: #fff;
+}
+
+
+.nav-align {
+  float: left;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1em 1.3em 0 1.3em;
+}
+
+.sub-align {
+display: block;
+margin: 3em 0 0 0;
+position: absolute;
+}
+
+.bt-align {
+display: block;
+width: 50%;
+margin: 0 auto;
+/*background-color: red;*/
+}
+
+li.photo {
+  display: inline-block;
+  position: relative;
+  margin: .0 0 0 1em;
+  padding: .2em 1.5em 0 0;
+  font-family: "Georgia", "Times", serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+li.photo-page {
+  display: inline-block;
+  position: relative;
+  margin: .0 0 0 1em;
+  padding: .2em 1.5em 0 0;
+  font-family: "Georgia", "Times", serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #333;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+}
+
+#photo-page-small {
+  font-family: serif;
+  font-weight: 400;
+  font-size: .7em;
 }
 
 #nb-photos-rght-col {
@@ -200,7 +273,7 @@ p.nb-wal-txt{
   position: absolute;
   float: left;
   display: block;
-  background color: red;
+  /*background color: red;*/
   margin: 52em 0 0 -10em;
   /*padding: 10px;*/
 }
@@ -220,15 +293,15 @@ p.nb-wal-txt{
 }
 
 #home-logo {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-family: "acta-display", serif;
   font-weight: 300; 
   font-size: 2em; 
   color: #333;
   display: inline;
-  margin: 0 0 .5em -4em;
+  margin: 0 0 .5em 0;
   position: absolute;
-  background-color: yellow;
+  background-color: white;
 }
 
 #nb-pge-colr {
@@ -244,6 +317,10 @@ background-color: #333;
   height: 4em;
 }
 
+#current-page {
+  color: #333;
+}
+
 #page-footer {
   clear: both;
   width: 100%;
@@ -254,80 +331,75 @@ background-color: #333;
   padding: 10px;
 }
 
-/*#pages-header {
-  margin: 0 auto;
-  padding: .5em;
-  width: 100%;
-  height: 5em;
-  display: block;
-  background-color: #333;
-  opacity: 0.75;
-} 
-*/
-
-/*#pages-logo {
-  font-family: "acta-display", serif;
-  font-weight: 300; 
-  font-size: 2em; 
-  color: #fff;
-  display: inline-table;
-  margin: .05em 0 .05em 0;
-}*/
-
-/*#galleries-header {
-  margin: 0 auto;
-  position: absolute;
-  padding: .5em;
-  width: 100%;
-  height: 5em;
-  display: block;
-}*/
-
-/*#galleries-logo {
+#artists-kubrick {
+  width: 37%;
   float: left;
-  text-transform: uppercase;
-  font-family: "acta-display", serif;
-  font-weight: 300; 
-  font-size: 1.5em; 
-  color: #333;
-  display: inline-table;
-  margin: .5em auto .2em 1.5em;
-}*/
-
-#galleries-kubrick {
-  /*clear: both;*/
-  width: 50%;
-  float: left;
-  margin: -23em 35em 30em 40em;
-/*  display: block;*/
+  margin: -16em 35em 30em 40em;
+  display: block;
   }
 
-#gallerie-s01-row1a {
+#artists-greer {
+  width: 37%;
+  float: left;
+  margin: -28em 35em 0 40em;
+  display: block;
+  }
+
+#artists-row1a {
   float: left;
   width: 25%;
-  margin: 11em 0 0 1em;
-  /*display: inline;*/
+  margin:  6em 0 0 1em;
 }
 
-#gallerie-s01-row1b {
-  /*clear: both;*/
+#artists-row1b {
   width: 25%;
   float: left;
-  margin: 8em 0 0 5em;
-  /*display: inline;*/
+  margin: 6em 0 0 4em;
 }
 
-#gallerie-s01-row2a {
+#artists-row2a {
   width: 25%;
   float: left;
-  margin: -50em 0 0 1em;
+  margin: -48em 0 0 1em;
   display: block;
 }
 
-#gallerie-s01-row2b{
+#artists-row2b{
   width: 25%;
   float: left;
-  margin: -50em 0 0 22em;
+  margin: -48em 0 0 21em;
   display: block;
 }
+
+#artists-row3a {
+  width: 25%;
+  float: left;
+  margin: -30em 0 0 1em;
+  display: block;
+}
+
+#artists-row3b {
+  width: 25%;
+  float: left;
+  margin: -30em 0 0 21em;
+  display: block;
+}
+
+#artists-row4a {
+  width: 25%;
+  float: left;
+  margin: -16em 0 0 1em;
+  display: block;
+}
+
+#artists-row4b {
+  width: 25%;
+  float: left;
+  margin: -16em 0 0 21em;
+  display: block;
+}
+
+
+
+
 
